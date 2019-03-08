@@ -1,19 +1,37 @@
 ﻿import React from 'react';
-import Image from 'react-bootstrap/Image';
+import CardMedia from '@material-ui/core/CardMedia';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import cazzo from '.././images/header-bg.jpg';
 
 
 
+const styles = {
+    card: {
+        maxWidth: 345,
+    },
+    media: {
+        objectFit: 'cover',
+    },
+};
 
-const Jumbo = (props) => {
-
+function Jumbo(props) {
+    const { classes } = props;
     return (
 
-        
-        <Image fluid src={require('../images/header-bg.jpg')} />
+
+        <CardMedia
+            component="img"
+            className={classes.media}
+            height="240"
+            image={cazzo} />
            
 
 
     );
 };
+Jumbo.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
 
-export default Jumbo;
+export default withStyles(styles)(Jumbo);

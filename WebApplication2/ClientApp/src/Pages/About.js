@@ -2,7 +2,7 @@
 import Jumbo from '../components/Jumbotron';
 
 
-class Home
+class About
     extends Component {
     render() {
         return (
@@ -11,11 +11,11 @@ class Home
 
 
 
-                
+
             <div>
 
-             
-                    <Jumbo />
+
+                <Jumbo />
 
             </div>
 
@@ -26,4 +26,4 @@ class Home
     }
 }
 
-export default Home;
+export default About;

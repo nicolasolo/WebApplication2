@@ -1,17 +1,38 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router';
-import { Layout } from './components/Layout';
-import Home from './Pages/Home'
+import Home from './Pages/Home';
+import Jumbo from './components/Jumbotron';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import AppBar from './components/AppBar';
+import About from './Pages/About';
 
-export default class App extends Component {
-  displayName = App.name
 
-  render() {
-    return (
-      <Layout>
-            <Route exact path='/' component={Home} />
-            
-      </Layout>
-    );
-  }
+
+
+class App extends Component {
+    render() {
+        return (
+
+            <Router>
+                <div>
+                   
+                    <AppBar />
+
+
+
+                    <Route path="/" exact component={Home} />
+
+                    <Route path="/about" component={About} />
+
+
+
+
+
+                </div>
+            </Router>
+
+        );
+    }
 }
+
+export default App;
+
