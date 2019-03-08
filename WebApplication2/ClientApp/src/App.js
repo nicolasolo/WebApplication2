@@ -10,7 +10,7 @@ export default class App extends Component {
     return (
       <Layout>
             <Route exact path='/' component={Home} />
-            <h1>help</h1>
+            
       </Layout>
     );
   }
