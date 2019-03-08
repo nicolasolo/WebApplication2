@@ -12,12 +12,12 @@ class Home
 
 
                 
-            <div>
+           
 
              
                     <Jumbo />
 
-            </div>
+            
 
 
 
