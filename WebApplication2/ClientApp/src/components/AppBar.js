@@ -30,9 +30,7 @@ function ButtonAppBar(props) {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
-                    <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
                         <Drawer />
-                    </IconButton>
                     <Typography variant="h6" color="inherit" className={classes.grow}>
                         Airin Love For Children
           </Typography>

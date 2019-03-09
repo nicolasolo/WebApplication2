@@ -2,13 +2,21 @@
   "name": "WebApplication2",
   "version": "0.1.0",
   "dependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
     "@material-ui/core": "3.9.2",
     "@material-ui/icons": "3.0.2",
-    "react-scripts": "2.1.5",
-    "react-router-dom": "4.3.1",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "foreman": "^3.0.1",
+    "graphql": "^14.1.1",
+    "marked": "^0.6.1",
+    "mongoose": "^5.4.18",
+    "nodemon": "^1.18.10",
+    "react": "^16.8.4",
     "react-bootstrap": "1.0.0-beta.5",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.1.5",
     "reactstrap": "7.1.0"
   },
   "scripts": {
@@ -26,5 +34,4 @@
     "not ie <= 11",
     "not op_mini all"
   ]
- 
 }
